@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contaition{
+    position: relative;
+    top: 100px;
+    transform: translateX(20%);
+}
+/* header */
+.header {
+    margin: 0 auto;
+    display: block;
+    max-width: 45%;
+}
+.header_heading {
+    text-align: center;
+}
+.header_btn {
+    background-color: rgb(115, 202, 236);
+    color: black;
+}
+/* center */
+.center{
+    margin: 0 auto;
+    display: block;
+    max-width: 45%;
+}
+
+#center_item .textTask{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+.textTask input{
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none;
+    width: 370px;
+    cursor: pointer;
+}
+.center_btn button{
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-items: center;
+}
+
+#edit i{
+    color: rgb(43, 163, 13);
+}
+ 
+#delete i{
+    color: rgb(248, 81, 81);
+}
+@media  (max-width:40em) {
+    .contaition{
+        transform: translateX(0%);
+    }
+    .header{
+        max-width: 90%;
+    }
+    .center{
+        max-width: 90%;
+    }
+    .header_heading{
+        color: #fff;
+    }
+    .center_heading{
+        color: #fff;
+    }
+}
+/* .center_btn{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+#edit , #delete{
+    position: relative;
+    margin-top: 3px;
+    margin-left: 2px;
+    display: inline;
+    width: 60px;
+    transform: translateY(-45px);
+} */
